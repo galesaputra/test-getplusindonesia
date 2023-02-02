@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24393DCC298C396200E9BB6D /* image_component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393DCB298C396200E9BB6D /* image_component.swift */; };
 		24F35DB9298BD78E000076B2 /* test_getplusindonesiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F35DB8298BD78E000076B2 /* test_getplusindonesiaApp.swift */; };
 		24F35DBB298BD78E000076B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F35DBA298BD78E000076B2 /* ContentView.swift */; };
 		24F35DBD298BD791000076B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F35DBC298BD791000076B2 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24393DCB298C396200E9BB6D /* image_component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_component.swift; sourceTree = "<group>"; };
 		24F35DB5298BD78E000076B2 /* test_getplusindonesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_getplusindonesia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F35DB8298BD78E000076B2 /* test_getplusindonesiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_getplusindonesiaApp.swift; sourceTree = "<group>"; };
 		24F35DBA298BD78E000076B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24393DCA298C393500E9BB6D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				24393DCB298C396200E9BB6D /* image_component.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		24F35DAC298BD78E000076B2 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		24F35DB7298BD78E000076B2 /* test_getplusindonesia */ = {
 			isa = PBXGroup;
 			children = (
+				24393DCA298C393500E9BB6D /* Components */,
 				24F35DB8298BD78E000076B2 /* test_getplusindonesiaApp.swift */,
 				24F35DBA298BD78E000076B2 /* ContentView.swift */,
 				24F35DBC298BD791000076B2 /* Assets.xcassets */,
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24393DCC298C396200E9BB6D /* image_component.swift in Sources */,
 				24F35DBB298BD78E000076B2 /* ContentView.swift in Sources */,
 				24F35DB9298BD78E000076B2 /* test_getplusindonesiaApp.swift in Sources */,
 			);
