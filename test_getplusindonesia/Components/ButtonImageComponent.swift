@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ButtonImage: View {
+    var image: String
+    var onTap: () -> Void
+    
     var body: some View {
-        Button(action: {}) {
-            Image("image_vouchers")
+        Button(action: onTap) {
+            Image(image)
                 .resizable()
                 .frame(width: 40.0, height: 40.0)
         }
