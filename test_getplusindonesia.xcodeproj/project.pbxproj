@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2430AB75298DEE3000802F27 /* PromoCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430AB74298DEE3000802F27 /* PromoCardComponent.swift */; };
+		2430AB78298DF4BA00802F27 /* PromoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430AB77298DF4BA00802F27 /* PromoDetailView.swift */; };
+		2430AB7A298DFA1800802F27 /* WebviewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430AB79298DFA1800802F27 /* WebviewComponent.swift */; };
+		2430AB7C298E2F5700802F27 /* MerchantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430AB7B298E2F5700802F27 /* MerchantListView.swift */; };
+		2430AB7E298E313F00802F27 /* MerchantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430AB7D298E313F00802F27 /* MerchantModel.swift */; };
 		24393DCC298C396200E9BB6D /* ButtonImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393DCB298C396200E9BB6D /* ButtonImageComponent.swift */; };
-		245C3F39298D62CA00C3162B /* PromoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C3F38298D62CA00C3162B /* PromoModel.swift */; };
-		245C3F3B298D764900C3162B /* PromoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C3F3A298D764900C3162B /* PromoData.swift */; };
+		245C3F3B298D764900C3162B /* PromoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C3F3A298D764900C3162B /* PromoModel.swift */; };
+		247274202990A25C00A5950C /* VoucherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2472741F2990A25C00A5950C /* VoucherController.swift */; };
+		247274222990A39600A5950C /* MerchantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247274212990A39600A5950C /* MerchantController.swift */; };
+		247274242990A41500A5950C /* PromoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247274232990A41500A5950C /* PromoController.swift */; };
+		24ED1114298F54DF006B85DB /* NetworkImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ED1113298F54DF006B85DB /* NetworkImageComponent.swift */; };
+		24ED1116298F58DC006B85DB /* VoucherListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ED1115298F58DC006B85DB /* VoucherListView.swift */; };
+		24ED111A298F5A62006B85DB /* VoucherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ED1119298F5A62006B85DB /* VoucherModel.swift */; };
+		24ED1120298F8627006B85DB /* StringDateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ED111F298F8627006B85DB /* StringDateFormat.swift */; };
 		24F35DB9298BD78E000076B2 /* test_getplusindonesiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F35DB8298BD78E000076B2 /* test_getplusindonesiaApp.swift */; };
 		24F35DBB298BD78E000076B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F35DBA298BD78E000076B2 /* ContentView.swift */; };
 		24F35DBD298BD791000076B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F35DBC298BD791000076B2 /* Assets.xcassets */; };
@@ -37,9 +48,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2430AB74298DEE3000802F27 /* PromoCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardComponent.swift; sourceTree = "<group>"; };
+		2430AB77298DF4BA00802F27 /* PromoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailView.swift; sourceTree = "<group>"; };
+		2430AB79298DFA1800802F27 /* WebviewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewComponent.swift; sourceTree = "<group>"; };
+		2430AB7B298E2F5700802F27 /* MerchantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantListView.swift; sourceTree = "<group>"; };
+		2430AB7D298E313F00802F27 /* MerchantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantModel.swift; sourceTree = "<group>"; };
 		24393DCB298C396200E9BB6D /* ButtonImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImageComponent.swift; sourceTree = "<group>"; };
-		245C3F38298D62CA00C3162B /* PromoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoModel.swift; sourceTree = "<group>"; };
-		245C3F3A298D764900C3162B /* PromoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoData.swift; sourceTree = "<group>"; };
+		245C3F3A298D764900C3162B /* PromoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoModel.swift; sourceTree = "<group>"; };
+		2472741F2990A25C00A5950C /* VoucherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherController.swift; sourceTree = "<group>"; };
+		247274212990A39600A5950C /* MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantController.swift; sourceTree = "<group>"; };
+		247274232990A41500A5950C /* PromoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoController.swift; sourceTree = "<group>"; };
+		24ED1113298F54DF006B85DB /* NetworkImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageComponent.swift; sourceTree = "<group>"; };
+		24ED1115298F58DC006B85DB /* VoucherListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherListView.swift; sourceTree = "<group>"; };
+		24ED1119298F5A62006B85DB /* VoucherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherModel.swift; sourceTree = "<group>"; };
+		24ED111F298F8627006B85DB /* StringDateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDateFormat.swift; sourceTree = "<group>"; };
 		24F35DB5298BD78E000076B2 /* test_getplusindonesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_getplusindonesia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F35DB8298BD78E000076B2 /* test_getplusindonesiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_getplusindonesiaApp.swift; sourceTree = "<group>"; };
 		24F35DBA298BD78E000076B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,10 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2430AB76298DF49000802F27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2430AB77298DF4BA00802F27 /* PromoDetailView.swift */,
+				2430AB7B298E2F5700802F27 /* MerchantListView.swift */,
+				24ED1115298F58DC006B85DB /* VoucherListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		24393DCA298C393500E9BB6D /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				24393DCB298C396200E9BB6D /* ButtonImageComponent.swift */,
+				2430AB74298DEE3000802F27 /* PromoCardComponent.swift */,
+				2430AB79298DFA1800802F27 /* WebviewComponent.swift */,
+				24ED1113298F54DF006B85DB /* NetworkImageComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -88,10 +123,29 @@
 		245C3F37298D629C00C3162B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				245C3F38298D62CA00C3162B /* PromoModel.swift */,
-				245C3F3A298D764900C3162B /* PromoData.swift */,
+				245C3F3A298D764900C3162B /* PromoModel.swift */,
+				2430AB7D298E313F00802F27 /* MerchantModel.swift */,
+				24ED1119298F5A62006B85DB /* VoucherModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2472741E2990A0E100A5950C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2472741F2990A25C00A5950C /* VoucherController.swift */,
+				247274212990A39600A5950C /* MerchantController.swift */,
+				247274232990A41500A5950C /* PromoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24ED111E298F8610006B85DB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				24ED111F298F8627006B85DB /* StringDateFormat.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		24F35DAC298BD78E000076B2 = {
@@ -117,6 +171,9 @@
 		24F35DB7298BD78E000076B2 /* test_getplusindonesia */ = {
 			isa = PBXGroup;
 			children = (
+				2472741E2990A0E100A5950C /* Controller */,
+				24ED111E298F8610006B85DB /* Extension */,
+				2430AB76298DF49000802F27 /* View */,
 				245C3F37298D629C00C3162B /* Model */,
 				24393DCA298C393500E9BB6D /* Components */,
 				24F35DB8298BD78E000076B2 /* test_getplusindonesiaApp.swift */,
@@ -168,6 +225,8 @@
 			dependencies = (
 			);
 			name = test_getplusindonesia;
+			packageProductDependencies = (
+			);
 			productName = test_getplusindonesia;
 			productReference = 24F35DB5298BD78E000076B2 /* test_getplusindonesia.app */;
 			productType = "com.apple.product-type.application";
@@ -240,6 +299,9 @@
 				Base,
 			);
 			mainGroup = 24F35DAC298BD78E000076B2;
+			packageReferences = (
+				24ED111B298F7D81006B85DB /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 24F35DB6298BD78E000076B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,10 +345,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				24393DCC298C396200E9BB6D /* ButtonImageComponent.swift in Sources */,
-				245C3F39298D62CA00C3162B /* PromoModel.swift in Sources */,
+				2430AB75298DEE3000802F27 /* PromoCardComponent.swift in Sources */,
+				2430AB78298DF4BA00802F27 /* PromoDetailView.swift in Sources */,
+				247274202990A25C00A5950C /* VoucherController.swift in Sources */,
 				24F35DBB298BD78E000076B2 /* ContentView.swift in Sources */,
+				24ED1114298F54DF006B85DB /* NetworkImageComponent.swift in Sources */,
+				2430AB7E298E313F00802F27 /* MerchantModel.swift in Sources */,
+				24ED1116298F58DC006B85DB /* VoucherListView.swift in Sources */,
+				24ED111A298F5A62006B85DB /* VoucherModel.swift in Sources */,
+				247274242990A41500A5950C /* PromoController.swift in Sources */,
+				2430AB7A298DFA1800802F27 /* WebviewComponent.swift in Sources */,
 				24F35DB9298BD78E000076B2 /* test_getplusindonesiaApp.swift in Sources */,
-				245C3F3B298D764900C3162B /* PromoData.swift in Sources */,
+				2430AB7C298E2F5700802F27 /* MerchantListView.swift in Sources */,
+				247274222990A39600A5950C /* MerchantController.swift in Sources */,
+				245C3F3B298D764900C3162B /* PromoModel.swift in Sources */,
+				24ED1120298F8627006B85DB /* StringDateFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +702,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24ED111B298F7D81006B85DB /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 24F35DAD298BD78E000076B2 /* Project object */;
 }
