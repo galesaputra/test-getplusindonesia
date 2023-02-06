@@ -9,32 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel = PromoModel()
+    @StateObject var viewModel = PromoController()
+    @State var isLinkActive = false
+    @State var isLinkVoucherActive = false
     
     var body: some View {
         NavigationView{
             VStack(alignment: .leading) {
                 HStack {
                     Spacer()
-                    ButtonImage(image: "image_merchant", onTap: { print("hello") })
-                    ButtonImage(image: "image_vouchers", onTap: { print("hello") })
+                    NavigationLink(destination: MerchantListView(), isActive: $isLinkActive) {
+                        ButtonImage(image: "image_merchant", onTap: { self.isLinkActive = true })
+                    }
+                    NavigationLink(destination: VoucherListView(), isActive: $isLinkVoucherActive) {
+                        ButtonImage(image: "image_vouchers", onTap: { self.isLinkVoucherActive = true })
+                    }
                     Spacer()
                 }
                 .padding()
                 .border(.green)
-                HStack(spacing: 10) {
-                    ForEach( viewModel.promoListData?.data.layout.promo.data ?? []) {promo in
-                        AsyncImage(
-                            url: URL(string: promo.imageURL),
-                            content: { image in
-                                image.resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(maxWidth: 300, maxHeight: 100)
-                            },
-                            placeholder: {
-                                ProgressView()
-                            }
-                        )
+                ScrollView {
+                    HStack(spacing: 10) {
+                        ForEach( viewModel.promoListData?.data.layout.promo.data ?? []) {promo in
+                            PromoCard(promoImageUrl: promo.imageURL, promoOrder: promo.order, promoLink: promo.url)
+                        }
                     }
                 }
                 Spacer()
