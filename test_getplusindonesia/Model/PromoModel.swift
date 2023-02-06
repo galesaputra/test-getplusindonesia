@@ -1,55 +1,57 @@
 //
-//  PromoModel.swift
+//  PromoData.swift
 //  test_getplusindonesia
 //
-//  Created by Gale on 03/02/23.
+//  Created by Gale on 04/02/23.
 //
 
 import Foundation
-class PromoModel: ObservableObject {
-    let promoUrl = "https://private-anon-bb055445df-gpimobiletakehometest.apiary-mock.com/home"
-    
-    //    @State var promoListData: PromoData?
-    @Published private(set) var promoListData: PromoData?
-    
-    init () {
-        fetchPromo();
+
+// MARK: - PromoModel
+struct PromoData: Decodable {
+    let data: DataClass
+}
+
+// MARK: - DataClass
+struct DataClass: Decodable {
+    let layout: Layout
+}
+
+// MARK: - Layout
+struct Layout: Decodable {
+    let menu: [Menu]
+    let promo: Promo
+}
+
+// MARK: - Menu
+struct Menu: Decodable {
+    let logoURL: String
+    let label, id: String
+    let deeplink: String
+    let enable, visible: Bool
+
+    enum CodingKeys: String, CodingKey {
+        case logoURL = "logoUrl"
+        case label, id, deeplink, enable, visible
     }
-    
-    func fetchPromo() {
-        if let url = URL(string: promoUrl) {
-            let session = URLSession(configuration: .default)
-            let task = session.dataTask(with: url, completionHandler: handleAfterPromo(data:response:error:))
-            
-            task.resume()
-        }
-    }
-    
-    func handleAfterPromo(data: Data?, response: URLResponse?, error: Error?) {
-        if error != nil {
-            print(error!)
-            return
-        }
-        
-        if let safeData = data {
-            
-            self.parseJSON(data: safeData)
-            
-        }
-    }
-    
-    func parseJSON(data: Data) {
-        let decoder = JSONDecoder()
-        do {
-            
-            let decodedData = try decoder.decode(PromoData.self, from: data)
-            DispatchQueue.main.async {
-                self.promoListData = decodedData
-                
-            }
-            
-        } catch {
-            print(error)
-        }
+}
+
+// MARK: - Promo
+struct Promo: Decodable {
+    let title: String
+    let data: [Datum]
+}
+
+// MARK: - Datum
+struct Datum: Decodable, Identifiable {
+    let id: Int
+    let imageURL: String
+    let order: Int
+    let url: String
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case imageURL = "imageUrl"
+        case order, url
     }
 }

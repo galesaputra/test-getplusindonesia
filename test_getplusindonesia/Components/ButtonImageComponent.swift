@@ -17,6 +17,5 @@ struct ButtonImage: View {
                 .resizable()
                 .frame(width: 40.0, height: 40.0)
         }
-        
     }
 }
